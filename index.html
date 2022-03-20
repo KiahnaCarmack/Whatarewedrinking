@@ -1,56 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Drinks Application</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+    <title>Drinks Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 class="ml9">
         <span class="text-wrapper">
-          <span class="letters font-italic text-white">What are We Drinking?</span>
+            <span class="letters font-italic text-white">What are We Drinking?</span>
         </span>
-      </h1>
-      
-   
-<div id="demo" class="carousel slide" data-ride="carousel">
+    </h1>
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" ></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/ct3.jpeg">
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/ct3.jpeg">
+            </div>
+            <div class="carousel-item">
+                <img src="images/ct8.jpeg">
+            </div>
+            <div class="carousel-item">
+                <img src="images/ct9.jpeg">
+            </div>
+
+            <!-- Left and right controls -->
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/ct8.jpeg" >
-    </div>
-    <div class="carousel-item">
-        <img src="images/ct9.jpeg" >
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-<div class="searchBar float-md-left">
-<input type="text" class="input" placeholder="Search.." name="search">
-<button class="Button"> Search</button>
-</div>
+    <div>
+        <h1 class="description text-white font-italic" id="searchBar">Search for a cocktail or, check out our list of popular drinks!
+        </h1>
+        <div class="searchBar col-md-8 ">
+            <input type="text" class="input" placeholder="Search.." name="search">
+            <button class="Button"> Search</button>
+        </div>
+        <div class="pHeader text-white font-italic">
+            <h1>Popular Drinks </h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/wss.jpeg" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Whiskey Sour</h2>
+                        <p>Bourbon, lemon juice,simple syrup, and egg white. Don't let the addition of egg whites turn you away, this drink is delicious and refreshing!</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/wof.jpeg" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Old Fashioned</h2>
+                        <p>A timeless drink, the Old Fashioned consists of, Sweetner, bitters, and bourbon, garnished with an orange peel.Simple and tasty!</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/sdd.jpeg" style="width:300px;height:250px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Daiquiri</h2>
+                        <p>Just like the margarita and bloody mary, there are many ways to order a daiquiri. The classic daiquiri is rum, lime juice and, simple syrup.
+                            Shake it up and ask for also popular strawberry daiquiri.
+                        </p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/bm.jpeg" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Bloody Mary</h2>
+                        <p>There are many ways to make a Bloody Mary. From spicy, to tangy, and jampacked with garnishes, there are endless versions to this classic drink! For a standard BM:
+                            Vodka, Tomato juice, Worcestershire sauce, Tabasco, Salt and Pepper, garnished with Celery Stalk and Green Olives.
+                        </p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/pk.jpeg" alt="Paris" style="width:300px;height:225px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Pain Killer</h2>
+                        <p>Pusser's rum (or any rum you like), pineapple juice, orange juice, coconut cream,nutmeg.</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/ng.webp"  style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Negroni</h2>
+                        <p> Negroni is an Italian cocktail, made of one part gin, one part vermouth rosso and one part Campari, garnished with orange peel.</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/mj.jpeg" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Mojito</h2>
+                        <p>Made with mint leaves,white rum, lime juice,simple syrup,club soda. A timeless drink for any occasion!</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/marg.webp" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Margarita</h2>
+                        <p>Typically made with silver tequila, orange liqueur, lime, agave, rimmed with salt. This is a regular margirita. You can also ask for flavors such as strawberry,mango,pineapple or, any house made blends!</p>
+                        <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/emm.jpeg" style="width:300px;height:300px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>Espresso Martini</h2>
+                        <p>Consists of vodka, coffee liqueur, 1 shot of espresso, and simple syrup.</p>
+                      <a href="#searchBar"> <button> Search for the Recipe</button></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+            
+           
+        
+
 </body>
 <script type="text/javascript" src="app.js"></script>
+
 </html>
